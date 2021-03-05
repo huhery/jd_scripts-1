@@ -56,10 +56,28 @@ jd_scripts:
     # 例: JD_DEBUG=false
     - JD_DEBUG=
 
-      ## app
+    ## app
 
     ## 悦动族
-    - YDZ_YUEDONGZUTOKEN
+    - COOKIES_SPLIT=juanshen
+    - YDZ_YUEDONGZUTOKEN=
+    ## 芝麻视频
+    - ZM_ZHIMABODY=
+
+    ## 快手视频签到
+    - KS_TOKEN=
+    ## 电视家
+    - DSJ_HEADERS=
+    - DSJ_DRAWAL=
+    ## 中青
+    - YOUTH_HEADER=
+    - YOUTH_ARTBODY=
+    - YOUTH_TIME=
+    - YOUTH_READ=
+    - YOUTH_START=
+    - YOUTH_END=
+    - YOUTH_NOTIFY_CONTROL=true
+
     #使用自定义定任务追加默认任务之后，上面volumes挂载之后这里配置对应的文件名
     - CUSTOM_LIST_FILE=my_crontab_list.sh
 
