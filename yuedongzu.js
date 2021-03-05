@@ -65,14 +65,14 @@ const COOKIE = $.isNode() ? require("./yuedongzuCOOKIE") : ``;
 const logs = 0; // 0为关闭日志，1为开启
 const notifyttt = 1 // 0为关闭外部推送，1为12 23 点外部推送
 const notifyInterval = 2; // 0为关闭通知，1为所有通知，2为12 23 点通知  ， 3为 6 12 18 23 点通知 
-$.message = '', COOKIES_SPLIT = '', CASH = '', ddtime = '';
+$.message = '', COOKIES_SPLIT = '&', CASH = '', ddtime = '';
 CZ = 10
 const yuedongzutokenArr = [];
 let yuedongzutokenVal = ``;
 let middleyuedongzuTOKEN = [];
 if ($.isNode()) {
     // 没有设置 YDZ_CASH 则默认为 0 不兑换
-    CASH = process.env.YDZ_CASH || 0;
+    CASH = process.env.YDZ_CASH || 888;
 }
 if ($.isNode() && process.env.YDZ_YUEDONGZUTOKEN) {
     COOKIES_SPLIT = process.env.COOKIES_SPLIT || "\n";
