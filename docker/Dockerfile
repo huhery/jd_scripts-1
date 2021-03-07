@@ -14,7 +14,7 @@ RUN set -ex \
 
 RUN git clone ${REPO_URL} /scripts \
         && cd /scripts \
-        && git checkout master \
+        && git checkout master-svip \
         && mkdir logs \
         && npm config set registry https://registry.npm.taobao.org \
         && npm install
