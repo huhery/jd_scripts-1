@@ -4,8 +4,6 @@
 50 23 */3 * * rm -rf /scripts/logs/*.log
 
 ##############短期活动##############
-#年货节(活动时间：2021年1月9日-2021年2月9日)
-10 8 * * * node /scripts/jd_nh.js >> /scripts/logs/jd_nh.log 2>&1
 ##############长期活动##############
 # 签到
 0 0,18 * * * cd /scripts && node jd_bean_sign.js >> /scripts/logs/jd_bean_sign.log 2>&1
@@ -88,25 +86,3 @@
 # 京喜app签到
 39 7 * * * node /scripts/jx_sign.js >> /scripts/logs/jx_sign.log 2>&1
 
-
-## app
-
-## 跃动族
-0,30 0-23 * * * node /scripts/yuedongzu.js >> /scripts/logs/yuedongzu.log 2>&1
-## 芝麻视频
-0 * * * * node /scripts/zhima.js >> /scripts/logs/zhima.log 2>&1
-
-## 快手视频
-1/20 10-23/3 * * * node /scripts/kuaishou.js >> /scripts/logs/kuaishou.log 2>&1
-
-## 电视家
-*/15 4,12,19,23 * * * node /scripts/dianshijia.js >> /scripts/logs/dianshijia.log 2>&1
-
-## 中青签到&转盘宝箱
-*/10 5-23 * * * node /scripts/youth.js >> /scripts/logs/youth.log 2>&1
-
-## 中青自动阅读
-10 */2 * * * node /scripts/youth_Read.js >> /scripts/logs/youth_Read.log 2>&1
-
-## 中青浏览赚
-20 5 10 * * * node /scripts/youth_gain.js >> /scripts/logs/youth_gain.log 2>&1
