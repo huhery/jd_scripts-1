@@ -75,7 +75,7 @@
    "use_host_network" : false,
    "volume_bindings" : [
       {
-         "host_volume_file" : "/docker/jd_scripts/logs",
+         "host_volume_file" : "/docker/vip/jd_scripts/logs",
          "mount_point" : "/scripts/logs",
          "type" : "rw"
       }
