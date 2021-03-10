@@ -137,4 +137,3 @@
 
 ## 中青浏览赚
 20 5 10 * * * node /scripts/youth_gain.js >> /scripts/logs/youth_gain.log 2>&1
-
