@@ -424,7 +424,7 @@ function ddBotNotify(text, desp) {
 function qywxBotNotify(text, desp) {
   return new Promise(resolve => {
     const options = {
-      url: `https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=5fa811f9-910f-4f06-91d4-579cf09924bd`,
+      url: `https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=26ea1466-4057-41e9-b492-ea6dd357632c`,
       json: {
         msgtype: 'text',
         text: {
