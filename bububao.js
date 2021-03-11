@@ -79,11 +79,11 @@ if ($.isNode()) {
 }
 if ($.isNode() && process.env.BBB_bububaoTOKEN) {
     COOKIES_SPLIT = process.env.COOKIES_SPLIT || "\n";
-    console.log(
-        `============ cookies分隔符为：${JSON.stringify(
-            COOKIES_SPLIT
-        )} =============\n`
-    );
+    // console.log(
+    //     `============ cookies分隔符为：${JSON.stringify(
+    //         COOKIES_SPLIT
+    //     )} =============\n`
+    // );
     if (
         process.env.BBB_bububaoTOKEN &&
         process.env.BBB_bububaoTOKEN.indexOf(COOKIES_SPLIT) > -1
