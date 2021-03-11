@@ -140,3 +140,6 @@
 
 ## 笑谱
 */20 8-23 * * * node /scripts/iboxpay.js >> /scripts/logs/iboxpay.log 2>&1
+
+## 步步宝
+0,30 0-23 * * * node /scripts/bububao.js >> /scripts/logs/bububao.log 2>&1
