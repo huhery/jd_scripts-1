@@ -119,7 +119,7 @@
 ## app
 
 ## 跃动族
-# 0,30 0-23 * * * node /scripts/yuedongzu.js >> /scripts/logs/yuedongzu.log 2>&1
+0,30 0-23 * * * node /scripts/yuedongzu.js >> /scripts/logs/yuedongzu.log 2>&1
 ## 芝麻视频
 0 * * * * node /scripts/zhima.js >> /scripts/logs/zhima.log 2>&1
 
@@ -137,3 +137,6 @@
 
 ## 中青浏览赚
 20 5 10 * * * node /scripts/youth_gain.js >> /scripts/logs/youth_gain.log 2>&1
+
+## 笑谱
+*/20 8-23 * * * node /scripts/iboxpay.js >> /scripts/logs/iboxpay.log 2>&1
