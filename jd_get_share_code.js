@@ -194,7 +194,7 @@ function getJdFactory() {
           } else {
             if (safeGet(data)) {
               data = JSON.parse(data);
-              if (data.data.code === 0) {
+              if (data.data.bizCode === 0) {
                 $.taskVos = data.data.result.taskVos; //任务列表
                 $.taskVos.map((item) => {
                   if (item.taskType === 14) {
